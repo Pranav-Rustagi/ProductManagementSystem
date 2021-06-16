@@ -1,0 +1,89 @@
+:root {
+  --light-color: #ddd;
+  --dark-color: #282c34;
+}
+
+.container > div::-webkit-scrollbar {
+  height: 5px;
+}
+
+.container > div::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.container > div::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+
+.App {
+  padding: 2rem 4rem;
+  min-height: 100vh;
+  background: #e9c46a;
+}
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: var(--dark-color);
+  display: flex;
+  align-items: center;
+  color: var(--light-color);
+  font-size: calc(1.5rem + 1.75vw);
+  margin: -2rem -4rem 2rem;
+  padding: 1rem 4rem;
+}
+
+h1 {
+  margin: 1rem 0;
+}
+
+.modal-parent {
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+.table th{
+  background: var(--dark-color);
+  color: var(--light-color);
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+
+.table th:first-child, .table th:nth-child(2), .table th:nth-child(3) {
+  min-width: 150px;
+}
+
+.table th:nth-child(4), .table th:nth-child(5), .table th:nth-child(6), .table th:nth-child(7) {
+  min-width: 100px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media (max-width : 992px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
